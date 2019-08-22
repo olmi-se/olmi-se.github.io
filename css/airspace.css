@@ -87,6 +87,11 @@ header .navbar-default .navbar-nav li a {
   padding: 10px 26px;
   font-size: 15px;
 }
+
+header .navbar-logo {
+  max-width: 100px;
+}
+
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
 }
