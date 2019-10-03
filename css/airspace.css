@@ -6,16 +6,16 @@
  * 
  */
 
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-@import url(//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,100,300,500,700);
 @import url(//fonts.googleapis.com/css?family=Volkhov:400italic);
 /* var text-decoration */
 /*--
 	Common Css
 --*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-size: 19px;
 }
 html {
   scroll-behavior: smooth;
@@ -26,19 +26,22 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 h2 {
-  font-size: 30px;
-  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 30px
 }
 h3 {
   font-size: 28px;
   font-weight: 300;
 }
 p {
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 19px;
+  line-height: 27px;
 }
 ul {
   padding: 0;
@@ -54,11 +57,7 @@ a:active {
 .section-title {
   margin-bottom: 70px;
 }
-.section-title h2 {
-  text-transform: uppercase;
-  font-size: 28px;
-  font-weight: 600;
-}
+
 .section-title p {
   font-family: 'Volkhov', serif;
   font-style: italic;
@@ -86,9 +85,12 @@ header .navbar-default .navbar-nav {
   padding-top: 10px;
 }
 header .navbar-default .navbar-nav li a {
-  color: #333333;
+  color: #777;
   padding: 10px 26px;
-  font-size: 15px;
+  font-size: 18px;
+  font-variant-numeric: proportional-nums;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 header .navbar-logo {
@@ -125,10 +127,10 @@ font header .navbar-default .navbar-nav li a:hover {
   opacity: 0.8;
 }
 #slider .block {
-  color: #E3E3E4;
+  color: #FFF;
 }
 #slider .block h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 45px;
   line-height: 60px;
@@ -138,7 +140,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #slider .block p {
   font-size: 23px;
   line-height: 40px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
 }
@@ -243,11 +245,8 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 100%;
 }
 #contact-box .block h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #000;
-  font-size: 28px;
-  padding-bottom: 30px;
+  font-size: 30px;
+  color: #6f6f6f;
 }
 #contact-box .block p {
   color: #5C5C5C;
@@ -260,9 +259,20 @@ font header .navbar-default .navbar-nav li a:hover {
 #service {
   text-align: center;
   padding: 90px 0;
+  background-color: #f7f7f7;
+}
+#service .service-item-table {
+  display: table;
+}
+#service .service-item-row {
+  display: table-row;
 }
 #service .service-item {
-  padding-bottom: 30px;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 40px;
+    display: table-cell;
+    background-color: #FFF;
 }
 #service .service-item i {
   font-size: 60px;
@@ -271,14 +281,15 @@ font header .navbar-default .navbar-nav li a:hover {
 #service .service-item h4 {
   padding-top: 20px;
   margin: 0;
-  color: #666;
+  color: #828282;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 #service .service-item p {
   color: #888;
   padding-top: 10px;
   margin: 0;
-  font-size: 14px;
-  line-height: 1.8;
 }
 
 /*--
@@ -288,7 +299,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url("../img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 70px 0px;
+  padding: 90px 0px;
   position: relative;
   text-align: center;
   color: #fff;
@@ -309,19 +320,23 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 20px;
   line-height: 33px;
   margin: 0;
-  font-size: 30px;
 }
-#about p {
-  font-size: 14px;
-  line-height: 1.6;
-}
+
 #about .btn-contact {
-  padding: 15px 35px;
   border: none;
-  background-color: #fff;
-  font-size: 15px;
-  color: #333333;
+  background-color: #30bdd0;
+  font-size: 20px;
+  font-variant-numeric: proportional-nums;
+  font-weight: 600;
+  color: #fff;
   margin-top: 30px;
+  border-radius: 25px;
+  padding: 0 40px;
+  line-height: 50px;
+}
+
+#about p {
+  padding: 30px 13%;
 }
 
 /*--
@@ -330,8 +345,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 
 #testimonial {
-  padding-top: 30px;
-  padding-bottom: 75px;
+  padding: 90px 0px;
   text-align: center;
 }
 
@@ -339,7 +353,6 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 20px;
   line-height: 33px;
   margin: 0;
-  font-size: 30px;
 }
 
 #testimonial .clients-logo-img {
