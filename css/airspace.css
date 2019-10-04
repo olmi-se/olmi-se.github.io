@@ -256,40 +256,54 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
   service Start
 --*/
+
 #service {
   text-align: center;
   padding: 90px 0;
   background-color: #f7f7f7;
 }
-#service .service-item-table {
-  display: table;
+
+#service .service-items {
+  display: flex;
+  
+  flex-flow: row wrap;
+
+  justify-content: center;
 }
-#service .service-item-row {
-  display: table-row;
-}
+
 #service .service-item {
-    text-align: left;
-    padding: 30px;
-    margin-bottom: 40px;
-    display: table-cell;
-    background-color: #FFF;
+  width: 100%;
+  padding: 0.7em;
 }
-#service .service-item i {
+
+#service .service-item__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #FFF;
+  padding: 0.5em;
+}
+
+#service .service-item__content i {
   font-size: 60px;
   color: #4A4656;
 }
-#service .service-item h4 {
+
+#service .service-item__content h4 {
   padding-top: 20px;
+  padding-bottom: 10px;
   margin: 0;
   color: #828282;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
 }
-#service .service-item p {
+
+#service .service-item__content p {
   color: #888;
-  padding-top: 10px;
+  padding: 10px;
   margin: 0;
+  text-align: left;
 }
 
 /*--
@@ -356,11 +370,13 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 #testimonial .clients-logo-img {
-  padding: 0px 50px;
+  margin: 25px;
 }
 
 #testimonial .clients-logo-img img {
-  max-width: 300px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /*---------------------------*/
