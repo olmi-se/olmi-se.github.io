@@ -35,3 +35,6 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+
+# Google Analytics
+google_analytics: UA-150083164-1
